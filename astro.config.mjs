@@ -9,10 +9,5 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
     base: "resume",
-    integrations: [
-        solidJs(),
-        tailwind({
-            // config: { applyBaseStyles: false },
-        }),
-    ],
+    integrations: [solidJs(), tailwind()],
 });
